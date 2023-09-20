@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Latihan_Dashboard_Doa">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/bgOren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle"
+        />
+
+        <TextView
+            android:id="@+id/tvDoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Doa Dan Zikir APP"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginStart="25sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+           android:id="@+id/ivMengaji"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/logodoa"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDoadzikir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihlah Do'a Dan Dzikir"
+            android:textColor="#FF9800"
+            android:layout_below="@+id/bgOren"
+            android:textSize="25sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="200dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSelengkapnya"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#7F8081"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/bgOren"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="20dp"
+            >
+            <TextView
+                android:id="@+id/selengkapnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="Selengkapnya"
+                android:textSize="15sp"
+                />
+            <ImageView
+                android:id="@+id/btnArrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/baseline_arrow_forward_24"
+                android:layout_marginStart="55dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF9800"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:id="@+id/svDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvDoadzikir"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDoa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                />
+
+
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

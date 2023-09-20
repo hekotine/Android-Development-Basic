@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".calculator">
+<!--    picture-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calculator"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp"
+        />
+<!--    judul-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Calculator"
+        android:textColor="#9C27B0"
+        android:textSize="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+<!--    angka 1-->
+    <TextView
+        android:id="@+id/numberOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Number : "
+        android:textColor="#9C27B0"
+        android:textSize="20sp" />
+<!--    input angka 1-->
+    <EditText
+        android:id="@+id/inputOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--    angka 2-->
+    <TextView
+        android:id="@+id/numberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Number : "
+        android:textColor="#9C27B0"
+        android:textSize="20sp" />
+<!--    input angka 2-->
+    <EditText
+        android:id="@+id/inputTwo"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--    container 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_marginStart="20dp"
+        >
+<!--    button plus-->
+        <!--    button minus-->
+        <Button
+            android:id="@+id/btnCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="+"
+            android:textSize="25dp"
+            android:backgroundTint="#4CAF50"
+            />
+<!--        minus-->
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="-"
+            android:textSize="25dp"
+            android:backgroundTint="#F44336"
+            />
+<!--persen-->
+        <Button
+            android:id="@+id/btnPersen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="%"
+            android:textSize="25dp"
+            android:backgroundTint="#FF9800"
+            />
+
+    </LinearLayout>
+<!--container 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        >
+<!--        multi-->
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="X"
+            android:textSize="25dp"
+            android:backgroundTint="#2196F3"
+            />
+<!--        divine-->
+        <Button
+            android:id="@+id/btnDivine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="/"
+            android:textSize="25dp"
+            android:backgroundTint="#673AB7"
+            />
+<!--        clear-->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="CLEAR"
+            android:textSize="12dp"
+            android:backgroundTint="#8E938E"
+            />
+    </LinearLayout>
+<!--    result-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#9C27B0"
+        android:background="#FFEB3B"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:textColor="#673AB7"
+        android:background="#FFEB3B"
+        />
+</LinearLayout>

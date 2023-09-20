@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarRelative">
+<!--kiri atas-->
+    <TextView
+        android:id="@+id/kiriAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Atas"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        />
+    <!--    tengah atas-->
+    <TextView
+        android:id="@+id/tengahAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengah Atas"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+<!--kanan atas-->
+    <TextView
+        android:id="@+id/kananAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Atas"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        />
+<!--tengah-->
+    <TextView
+        android:id="@+id/tengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        />
+<!--    kiri tengah-->
+    <TextView
+        android:id="@+id/kiriTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        />
+<!--    kanan tengah-->
+    <TextView
+        android:id="@+id/kananTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kenan tengah "
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />
+<!--    bawah kanan-->
+    <TextView
+        android:id="@+id/kiriBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bawah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+<!--    tengah bawah-->
+    <TextView
+        android:id="@+id/tengahBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengah bawah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        />
+<!--    kanan bawah-->
+    <TextView
+        android:id="@+id/kananBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kanan bawah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+<!--    above-->
+    <TextView
+        android:id="@+id/diatasBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diatas Tengah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/tengah"
+        />
+<!--    below-->
+    <TextView
+        android:id="@+id/dibawahBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dibawah Tengah"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tengah"
+        />
+</RelativeLayout>

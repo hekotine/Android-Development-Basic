@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--editing ui start frome here-->
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Formulir Peminjaman Buku"
+        android:textColor="#009688"
+        android:textSize="25sp" />
+<!--nama-->
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Nama : "
+        android:textColor="#009688"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nama Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--nama end -->
+<!--kelas-->
+    <TextView
+        android:id="@+id/kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Kelas : "
+        android:textColor="#009688"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/inputKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Kelas Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--kelas end -->
+<!--kode-->
+    <TextView
+        android:id="@+id/kode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Kode Buku : "
+        android:textColor="#009688"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/inputKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Kode Buku"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+<!--kode end-->
+<!--button-->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#009688"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAllCaps="true"
+        />
+<!--button end-->
+<!--kode buku-->
+    <TextView
+        android:id="@+id/showName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="#009688"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/showClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="#009688"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/showCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="#009688"
+        android:textSize="18sp" />
+</LinearLayout>

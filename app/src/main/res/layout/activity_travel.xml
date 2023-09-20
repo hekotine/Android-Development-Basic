@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TravelActivity">
+
+<!--image travel background-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/bgtrsvel"
+        android:scaleType="centerCrop"
+        />
+<!--    judul -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campground"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="8dp"
+            >
+<!--        star-->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_star_24"
+            />
+<!--        rating-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.1"
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="7dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+<!--        sub judul-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kondersteg, Switzerland"
+            android:textSize="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:textColor="#9E9E9E"
+            />
+<!--    button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--        call and text-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:orientation="vertical">
+            <!--    button call-->
+            <ImageButton
+                android:id="@+id/ibCall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_call_24" />
+            <!--            text call-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Call"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!--        Route and Text-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginStart="50dp"
+            android:orientation="vertical">
+            <!--            navigation-->
+            <ImageButton
+                android:id="@+id/ibNavi"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_navigation_24" />
+            <!--            text navi-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Route"
+                android:textColor="#2196F3"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <!--        share and text-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginStart="50dp"
+            android:orientation="vertical">
+            <!--            button share-->
+            <ImageButton
+                android:id="@+id/ibShare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_share_24"
+
+                />
+            <!--            text share-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Share"
+                android:textColor="#2196F3"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/lorem"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:justificationMode="inter_word"
+        />
+
+</LinearLayout>
+
+

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrollView">
+
+        <ImageView
+            android:id="@+id/ivBgjjk"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bgjjkthree" />
+
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/satoru" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jujutsu Kaisen Shibuya Arc"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/ivCover"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="50"
+            android:shadowDy="50"
+            />
+        <TextView
+            android:id="@+id/Author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akutami"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toRightOf="@+id/ivCover"
+            android:textSize="16dp"
+            android:layout_marginTop="39dp"
+            />
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/baseline_star_24"
+            android:layout_toRightOf="@+id/Author"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8"
+            android:textColor="@color/white"
+            android:layout_below="@id/tvTitle"
+            android:layout_toRightOf="@+id/star"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:id="@+id/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.2M Reviews"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/rating"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fantasy"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ivCover"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#6AA6F3"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fantasy"
+                    android:layout_gravity="center"
+                    />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/action"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ivCover"
+          android:layout_centerHorizontal="true"
+            android:backgroundTint="#6AA6F3"
+            android:layout_marginTop="15dp"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:layout_gravity="center"
+                    />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/superPower"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ivCover"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#6AA6F3"
+            android:layout_marginTop="15dp"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Super Power"
+                    android:layout_gravity="center"
+                    />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Synopsis"
+            android:textSize="25sp"
+            android:layout_below="@+id/fantasy"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <ScrollView
+            android:id="@+id/subSynopsis"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/synopsis"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            >
+
+                <TextView
+                    android:id="@+id/isiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege Akutami. The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers to eliminate a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host. The manga has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since March 2018, with its chapters collected and published in 23 tankōbon volumes as of July 2023. An anime television series adaptation by MAPPA aired from October 2020 to March 2021. A review on Nerdist
+1
+ states that Jujutsu Kaisen moves somewhat faster than other shonen anime, which might be off-putting for some viewers due to anime's typical drag. However, the review also notes that the show's pacing is well-done and doesn't feel rushed.
+A review on CBR
+2
+ also mentions that Jujutsu Kaisen has a fast pace, with characters being introduced quickly and the plot moving along swiftly.
+A review on Discussing Film
+6
+ notes that Jujutsu Kaisen is a well-paced adaptation that respects what came before, with emotions and character development being given time to breathe.
+A review on MyAnimeList
+5
+ suggests that Jujutsu Kaisen's pacing is decent, with the show bringing a lot to the table that a wide variety of people can enjoy, such as action, character interactions, comedic scenes, and more.
+Overall, Jujutsu Kaisen's pacing is generally considered to be faster than other shonen anime, but it is also well-done and doesn't feel rushed. The show's pacing allows for emotions and character development to be given time to breathe, and it brings a lot to the table that a wide variety of people can enjoy.
+Related
+what are some of the criticisms of Jujutsu Kaisen's pacing
+how does Jujutsu Kaisen's pacing compare to Naruto
+what are some of the similarities in pacing between Jujutsu Kaisen and other shonen anime
+According to a review on Nerdist
+1
+, Jujutsu Kaisen shares similar pacing with other shonen anime to a degree. However, Jujutsu Kaisen moves somewhat faster, which might be off-putting for some viewers due to anime's typical drag.
+A review on Discussing Film
+6
+ notes that Jujutsu Kaisen is a well-paced adaptation that respects what came before, with emotions and character development being given time to breathe.
+A review on MyAnimeList
+5
+ suggests that Jujutsu Kaisen's pacing is decent, with the show bringing a lot to the table that a wide variety of people can enjoy, such as action, character interactions, comedic scenes, and more.
+A review on CBR
+2
+ mentions that Jujutsu Kaisen has a fast pace, but it also notes that other shonen anime have fast pacing as well.
+Overall, Jujutsu Kaisen shares some similarities in pacing with other shonen anime, such as giving time for emotions and character development to breathe. However, Jujutsu Kaisen's faster pace might be off-putting for some viewers, and it is noted to move somewhat faster than other shonen anime." />
+        </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:layout_below="@+id/subSynopsis"
+            android:textSize="22sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            />
+        <ScrollView
+            android:id="@+id/scrollReviewer"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/review"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pictReviewone"
+                    app:cardCornerRadius="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="3dp"
+                    >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/rias"
+                            />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/riasGremory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rias Gremory"
+                    android:textSize="17sp"
+                    android:layout_toRightOf="@id/pictReviewone"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginStart="13dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/commentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="So Attractive Gojoo"
+                    android:layout_below="@+id/riasGremory"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="8dp"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pictReviewtwo"
+                    app:cardCornerRadius="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_below="@+id/commentOne"
+                    >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/luffyyea"
+                            />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/luffy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monkey D. luffy"
+                    android:textSize="17sp"
+                    android:layout_toRightOf="@id/pictReviewone"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginStart="13dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/commentOne"
+                    />
+                <TextView
+                    android:id="@+id/commentTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fraudddkunaa was cryed hahahahha, imagine gojo have an six eyes power."
+                    android:layout_below="@+id/luffy"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="8dp"
+                    />
+        </RelativeLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@+id/scrollReviewer"
+            android:text="Continue Reading"
+            />
+</RelativeLayout>
